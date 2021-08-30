@@ -31,10 +31,10 @@ class BigCard extends Component {
         console.log("Me monte");
         fetch("http://localhost:3003/users")
         .then(response => {
-            response.json();
+            let esto = response.json();
         })
-        .then(data => {
-            let totalusers = data.meta.count
+        .then(esto => {
+            let userCount = esto.meta.count
         })
         .catch(e => {
             console.log("hay un error");
