@@ -1,6 +1,5 @@
 import React , { Component } from 'react';
 import PropTypes  from 'prop-types';
-import { response } from 'express';
 
 class BigCard extends Component {
 
@@ -30,8 +29,17 @@ class BigCard extends Component {
     componentDidMount()
     {
         console.log("Me monte");
-
-		
+        fetch("http://localhost:3003/users")
+        .then(response => {
+            response.json();
+        })
+        .then(data => {
+            let totalusers = data.meta.count
+        })
+        .catch(e => {
+            console.log("hay un error");
+            console.log(e)
+        })
     }
 
     componentDidUpdate()
