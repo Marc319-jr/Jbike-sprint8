@@ -4,7 +4,8 @@ import SmallCard from './SmallCard';
 function Top(){
     return(
         <div className = "rowWrap">
-            <SmallCard />
+            <SmallCard titulo = "Pelis en la base" data = "25" icono = "♥" />
+            <SmallCard titulo = "Pelis en la base" data = "25" icono = "♥"/>
             <SmallCard />
         </div>
 

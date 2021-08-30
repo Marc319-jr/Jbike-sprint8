@@ -38,7 +38,7 @@ body {
 
 
 .sidebar{
-    background-color: rgba(240, 240, 240, 0.445);
+    background-color: $lowligh;
     width: 14rem;
     height: 100vh;
     border-right: 1px solid $gray ;
@@ -60,22 +60,55 @@ body {
 
 .ContentWraper{
     padding: 20px ;
-    margin: 30px;
+    margin: 20px;
     background-color: $light;
     border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.7);
 
 
     .rowWrap
     {
         background-color: $lowligh;
         padding: 20px;
+        margin: 20px;
         border-radius: 10px;
         margin-bottom: 20px;
         display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
         .smallcard{
-            width: 45%;
+            border-radius: 0px;
+            width: 30%;
+            border-right: 5px solid blue;
+            border-radius: 10px;
+        }
+
+        .bigcard{
+            align-self: flex-start;
+            background-color: $light;
+            width: 48%;
+
+
+            .bcTitle{
+                align-items:center;
+                justify-content: center;
+                border-bottom: 4px solid $gray;
+                margin: 0 -16px;
+                display: flex;
+                
+                button{
+                    width: 40px;
+                }
+          
+                h3{
+                    padding: 5px;
+                
+                }
+            }
+
+
+
         }
     }
 

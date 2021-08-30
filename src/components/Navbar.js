@@ -1,4 +1,4 @@
-import image from '../assets/images/newLogo.png'
+import image from '../assets/images/Logo.png'
 import React, { useState } from 'react';
 import {
   Collapse,
@@ -23,7 +23,7 @@ const NavBar = (props) => {
   return (
     <div>
       <Navbar  light expand="md">
-        <NavbarBrand className = "logo" href="/">
+        <NavbarBrand className = "logo" href="/" >
         <img className="w-100" src={image} alt="ICH"/>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />

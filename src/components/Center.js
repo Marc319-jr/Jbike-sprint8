@@ -1,10 +1,12 @@
 import React from 'react';
-import Luzim from '../components/Luzim.js'
+import BigCard from './BigCard';
 
 function Center(){
     return(
         <div className ="rowWrap">
-            <Luzim />
+            <BigCard />
+            <BigCard />
+
         </div>
     )
 }
